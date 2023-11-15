@@ -13,7 +13,8 @@ OBJ_S = $(SRC_S:.c=.o)
 OBJ_C_BONUS = $(SRC_C_BONUS:.c=.o)
 OBJ_S_BONUS = $(SRC_S_BONUS:.c=.o)
 
-LIBFT = ./Libft/libft.a
+LIBFT_PATH = ./Libft
+LIBFT = $(LIBFT_PATH)/libft.a
 
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra
@@ -36,12 +37,15 @@ $(NAME_C_BONUS):	$(SRC_C_BONUS) $(LIBFT)
 $(NAME_S_BONUS):	$(SRC_S_BONUS) $(LIBFT)
 						$(CC) $(CFLAGS) $(SRC_S_BONUS) -o $(NAME_S_BONUS) $(LIBFT)
 
+$(LIBFT):
+				make -s -C $(LIBFT_PATH)
+
 clean:
-				make clean -s -C $(LIBFT)
+				make clean -s -C $(LIBFT_PATH)
 
 fclean:			clean
 					$(RM) $(NAME_C) $(NAME_S) $(NAME_C_BONUS) $(NAME_S_BONUS)
-					make fclean -s -C $(LIBFT)
+					make fclean -s -C $(LIBFT_PATH)
 
 re:				fclean all
 
