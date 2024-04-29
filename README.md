@@ -17,35 +17,35 @@ para el servidor), pero tendrás que justificar su uso.
 
 • En la parte obligatoria se te permite utilizar las siguientes funciones:
 
-◦ write
+**◦ write**
 
-◦ ft_printf y cualquier equivalente que TÚ hayas programado
+**◦ ft_printf y cualquier equivalente que TÚ hayas programado**
 
-◦ signal
+**◦ signal**
 
-◦ sigemptyset
+**◦ sigemptyset**
 
-◦ sigaddset
+**◦ sigaddset**
 
-◦ sigaction
+**◦ sigaction**
 
-◦ kill
+**◦ kill**
 
-◦ getpid
+**◦ getpid**
 
-◦ malloc
+**◦ malloc**
 
-◦ free
+**◦ free**
 
-◦ pause
+**◦ pause**
 
-◦ sleep
+**◦ sleep**
 
-◦ usleep
+**◦ usleep**
 
-◦ exit
+**◦ exit**
 
-<h1>2. Parte obligatoria<h1/>
+<h1>2. Parte obligatoria</h1>
 
 • Debes crear un programa de comunicación en la forma de un cliente y un servidor.
 
@@ -53,9 +53,9 @@ para el servidor), pero tendrás que justificar su uso.
 
 • El cliente tomará como parámetros:
 
-◦ El PID del servidor.
+**◦ El PID del servidor.**
 
-◦ La string que debería mandarse.
+**◦ La string que debería mandarse.**
 
 • El cliente debe comunicar la string pasada como parámetro al servidor. Una vez la
 string se haya recibido, el servidor debe mostrarla.
@@ -74,7 +74,7 @@ señales UNIX.
 
 <h1>3. Extras</h1>
 
-Lista de bonus:
+_Lista de bonus:_
 
 • El servidor confirma cada señal recibida mandando una señal al cliente.
 
