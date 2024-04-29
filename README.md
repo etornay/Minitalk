@@ -74,7 +74,7 @@ señales UNIX.
 
 <h1>3. Extras</h1>
 
-_Lista de bonus:_
+_**Lista de bonus:**_
 
 • El servidor confirma cada señal recibida mandando una señal al cliente.
 
